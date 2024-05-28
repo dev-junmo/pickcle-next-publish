@@ -1,0 +1,143 @@
+/* 모바일 햄버거 메뉴 애니메이션 */
+.menu-trigger {
+
+}
+
+.menu-trigger > div {
+  display: inline-block;
+  transition: all 0.4s;
+  box-sizing: border-box;
+}
+
+.menu-trigger > div:nth-child(1) {
+  animation: trigger-ani01 0.55s forwards;
+}
+.menu-trigger > div:nth-child(2) {
+  transition: all 0.25s 0.25s;
+  opacity: 1;
+}
+.menu-trigger > div:nth-child(3) {
+  animation: trigger-ani02 0.55s forwards;
+}
+
+.menu-trigger.active-ani > div:nth-child(1) {
+  animation: active-trigger-ani01 0.55s forwards;
+}
+.menu-trigger.active-ani > div:nth-child(2) {
+  opacity: 0;
+}
+.menu-trigger.active-ani div:nth-of-type(3) {
+  animation : active-trigger-ani02 .55s forwards;
+}
+
+
+@keyframes trigger-ani01 {
+  0% {
+    transform : translateY(11px) rotate(45deg);
+  }
+  50% {
+    transform : translateY(11px) rotate(0);
+  }
+  100% {
+    transform : translateY(0) rotate(0);
+  }
+}
+@keyframes trigger-ani02 {
+  0% {
+    transform : translateY(-11px) rotate(-45deg);
+  }
+  50% {
+    transform : translateY(-11px) rotate(0);
+  }
+  100% {
+    transform : translateY(0) rotate(0);
+  }
+}
+
+@keyframes active-trigger-ani01 {
+  0% {
+    transform : translateY(0) rotate(0);
+  }
+  50% {
+    transform : translateY(11px) rotate(0);
+  }
+  100% {
+    transform : translateY(11px) rotate(45deg);
+  }
+}
+@keyframes active-trigger-ani02 {
+  0% {
+    transform : translateY(0) rotate(0);
+  }
+  50% {
+    transform : translateY(-11px) rotate(0);
+  }
+  100% {
+    transform : translateY(-11px) rotate(-45deg);
+  }
+}
+
+
+/* 모바일 nav메뉴 */
+.mobileNav {
+  animation: nav-ani 0.75s forwards;
+}
+.mobileNav.navActice {
+  animation: active-nav-ani 0.75s forwards;
+}
+
+
+
+@keyframes nav-ani {
+  0% {
+    transform : translateX(0);
+  }
+  50% {
+    transform : translateX(1000px)
+  }
+  100% {
+    transform : translateX(1000px);
+    visibility: hidden;
+  }
+}
+@keyframes active-nav-ani {
+  0% {
+    transform : translateX(1000px)
+  }
+  50% {
+    transform : translateX(0)
+  }
+  100% {
+    transform : translateX(0);
+    visibility: visible;
+  }
+}
+
+
+/* 서치 바 애니메이션 */
+.search-bar-ani {
+  animation: search-bar 0.2s both;
+}
+.search-bar-ani.active {
+  animation: active-search-bar 0.2s both;
+}
+
+@keyframes search-bar {
+  0% {
+    transform : translateX(0);
+  }
+  100% {
+    transform : translateX(100%);
+  }
+}
+
+@keyframes active-search-bar {
+  0% {
+    transform : translateX(100%);
+  }
+  100% {
+    transform : translateX(0);
+  }
+}
+
+

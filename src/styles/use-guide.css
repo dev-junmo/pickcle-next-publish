@@ -1,0 +1,27 @@
+/* tailwindCSS map을 통한 background image 순차적으로 안 들어가는 이슈로 따로 css 정의 */
+/* .guideTab:nth-child(1) {
+  background-image: url('/assets/icons/use-guide-icon-01.webp');
+}
+.guideTab:nth-child(2) {
+  background-image: url('/assets/icons/use-guide-icon-02.webp');
+}
+.guideTab:nth-child(3) {
+  background-image: url('/assets/icons/use-guide-icon-03.webp');
+}
+.guideTab:nth-child(4) {
+  background-image: url('/assets/icons/use-guide-icon-04.webp');
+} */
+
+/* tailwindCSS map을 통한 background image hover가 안 먹히는 이슈로 따로 css 정의 */
+.guideTab:nth-child(1):hover {
+  background-image: url('/assets/icons/use-guide-icon-01-active.webp');
+}
+.guideTab:nth-child(2):hover {
+  background-image: url('/assets/icons/use-guide-icon-02-active.webp');
+}
+.guideTab:nth-child(3):hover {
+  background-image: url('/assets/icons/use-guide-icon-03-active.webp');
+}
+.guideTab:nth-child(4):hover {
+  background-image: url('/assets/icons/use-guide-icon-04-active.webp');
+}

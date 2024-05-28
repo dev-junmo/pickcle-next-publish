@@ -1,0 +1,55 @@
+{
+  "name": "conpick-user-web",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "type": "tsc",
+    "prettier": "prettier -w src",
+    "prepare": "husky install"
+  },
+  "dependencies": {
+    "@radix-ui/react-accordion": "^1.1.2",
+    "@radix-ui/react-alert-dialog": "^1.0.3",
+    "@radix-ui/react-dialog": "^1.0.3",
+    "@radix-ui/react-slider": "^1.1.2",
+    "@radix-ui/react-switch": "^1.0.3",
+    "classnames": "^2.3.2",
+    "clsx": "^1.2.1",
+    "next": "^13.3.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-draft-wysiwyg": "^1.15.0",
+    "react-hook-form": "^7.43.9",
+    "react-spring": "^9.7.2",
+    "swiper": "^9.2.4",
+    "zustand": "^4.3.7"
+  },
+  "devDependencies": {
+    "@svgr/webpack": "^7.0.0",
+    "@types/node": "20.1.0",
+    "@types/react": "^18.2.0",
+    "@types/react-draft-wysiwyg": "^1.13.4",
+    "@typescript-eslint/eslint-plugin": "^5.59.1",
+    "@typescript-eslint/parser": "^5.59.1",
+    "autoprefixer": "^10.4.14",
+    "eslint": "^8.39.0",
+    "eslint-config-next": "^13.3.1",
+    "husky": "^8.0.3",
+    "lint-staged": "^13.2.2",
+    "postcss": "^8.4.23",
+    "prettier": "^2.8.8",
+    "prettier-plugin-tailwindcss": "^0.2.8",
+    "tailwind-scrollbar": "^3.0.4",
+    "tailwindcss": "^3.3.2",
+    "tailwindcss-animated": "^1.0.1",
+    "typescript": "^5.0.4"
+  },
+  "volta": {
+    "node": "14.20.0",
+    "npm": "7.24.0"
+  }
+}
